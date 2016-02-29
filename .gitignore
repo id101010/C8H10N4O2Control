@@ -30,3 +30,9 @@
 
 # Debug files
 *.dSYM/
+
+# Matlab specific
+*_stm32f4/
+slprj/
+*.autosave
+*.mdl
