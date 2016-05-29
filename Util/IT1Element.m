@@ -53,7 +53,7 @@ Gs = KiKs /((1+s*T1) *(s)); %*exp(-s*20);
 bodeplot(Gs);
 
 %Wir haben keine reine PI Strecke sondern noch eine Strecke mit Totzeit.
-%TODO: Totzeit hinzufügen und Model & Bode neu berechen
+%TODO: Totzeit hinzufï¿½gen und Model & Bode neu berechen
 % P oder PI-Regler sollten aber reichen.
 
 %% ITt
@@ -131,7 +131,7 @@ legend({'Sprung','Sprungantwort','ITt + It1 -Element'})
 % noch nicht ok:
 %xu = ( KiKs * ((T1-Tt) - T1 * (1 - exp(-(T1-Tt)/T1))) * xe_0) / (xe_0 *KiKs)
 
-Kp=0.03; 
+Kp=0.015; 
 figure
 s = tf('s');
 Gs =  Kp* KiKs *exp(-s*Tt) /((1+s*T1) *(s));
