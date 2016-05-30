@@ -27,7 +27,7 @@ p = plot(t,Xa, 'r');
 set(p,'LineWidth',3);
 legend({'Sprung','Sprungantwort','ITt + It1 -Element'})
 
-Kp=0.015; 
+Kp=0.028; 
 s = tf('s');
 Gs =  Kp* KiKs *exp(-s*Tt) /((1+s*T1) *(s));
 
